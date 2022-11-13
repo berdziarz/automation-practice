@@ -1,5 +1,6 @@
 package org.berdzik.selenium.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -64,6 +65,7 @@ public abstract class BasePage {
         return Double.parseDouble(text.replaceAll("[^\\d.]", ""));
     }
 
+    @Step("Go to cart")
     public CartPage goToCart() {
         topCart.click();
         return new CartPage(webDriver);

@@ -1,5 +1,6 @@
 package org.berdzik.selenium.pages;
 
+import io.qameta.allure.Step;
 import org.berdzik.selenium.ProductDetails;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -40,6 +41,7 @@ public class CartPage extends BasePage {
                 .price(getProductPrice(product)).build();
     }
 
+    @Step("Remove first product from cart")
     public void removeFirstProduct() {
         checkIfCartIsNotEmpty();
         products.get(0).findElement(PRODUCT_REMOVE).click();
@@ -59,6 +61,7 @@ public class CartPage extends BasePage {
         return productTile.findElement(PRODUCT_TITLE).getText();
     }
 
+    @Step("Click process checkout")
     public CheckoutPage processCheckout() {
         checkIfCartIsNotEmpty();
         checkout.click();

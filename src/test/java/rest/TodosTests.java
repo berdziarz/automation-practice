@@ -1,5 +1,6 @@
 package rest;
 
+import io.qameta.allure.Feature;
 import io.restassured.response.Response;
 import org.berdzik.rest.ResourcePath;
 import org.berdzik.rest.Todo;
@@ -7,6 +8,7 @@ import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Feature("Todos tests")
 public class TodosTests extends RestApiTests {
 
     @Test

@@ -1,12 +1,13 @@
 package rest;
 
+import io.qameta.allure.Epic;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.berdzik.rest.Resource;
 import org.testng.annotations.BeforeClass;
 
-
+@Epic("Rest API tests")
 public abstract class RestApiTests {
 
     protected static final String EMAIL_REGEX = ".+@.+\\.[a-zA-Z]+";

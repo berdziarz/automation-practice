@@ -1,5 +1,6 @@
 package rest;
 
+import io.qameta.allure.Feature;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.berdzik.rest.Comment;
@@ -9,6 +10,7 @@ import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Feature("Posts tests")
 public class PostsTests extends RestApiTests {
 
     @Test

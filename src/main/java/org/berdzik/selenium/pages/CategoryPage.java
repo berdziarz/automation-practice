@@ -1,5 +1,6 @@
 package org.berdzik.selenium.pages;
 
+import io.qameta.allure.Step;
 import org.berdzik.selenium.ProductDetails;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,6 +27,7 @@ public class CategoryPage extends ProductTilesPage {
         checkPageTitle(categoryName);
     }
 
+    @Step("Add first product to cart")
     public ProductDetails addFirstProductToCart() {
         WebElement product = getFirstProductTile(productsTiles);
         ProductDetails productDetails = getDetailsFromProductTile(product);

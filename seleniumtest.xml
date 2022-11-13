@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Selenium tests">
+    <test name="ChromeTests">
+        <parameter name="browser" value="Chrome" />
+        <classes>
+            <class name="selenium.CartTests"/>
+        </classes>
+    </test>
+    <test name="FirefoxTests">
+        <parameter name="browser" value="Firefox" />
+        <classes>
+            <class name="selenium.CartTests"/>
+        </classes>
+    </test>
+    <test name="RestApi">
+        <packages>
+            <package name="org.berdzik.rest"/>
+        </packages>
+    </test>
+</suite>

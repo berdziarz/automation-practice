@@ -1,5 +1,6 @@
 package org.berdzik.selenium.pages;
 
+import io.qameta.allure.Step;
 import org.berdzik.selenium.HeaderCategory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,6 +15,7 @@ public class HomePage extends ProductTilesPage {
         checkPageUrl(BASE_PAGE_URL);
     }
 
+    @Step("Choose category {headerCategory}")
     public CategoryPage chooseCategory(HeaderCategory headerCategory) {
         moveToElement(categoryHeaderLink);
         Optional<WebElement> category = categories.stream()

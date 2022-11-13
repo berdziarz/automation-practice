@@ -8,7 +8,7 @@ import org.berdzik.rest.Resource;
 @SuperBuilder
 @Getter
 @Jacksonized
-public class User  extends Resource {
+public class User extends Resource {
 
     private String name;
     private String username;

@@ -1,17 +1,21 @@
 package selenium;
 
+import io.qameta.allure.Feature;
 import org.berdzik.selenium.HeaderCategory;
 import org.berdzik.selenium.ProductDetails;
 import org.berdzik.selenium.pages.CartPage;
 import org.berdzik.selenium.pages.CategoryPage;
 import org.berdzik.selenium.pages.CheckoutPage;
 import org.berdzik.selenium.pages.HomePage;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Listeners({ScreenshotListener.class})
+@Feature("Cart tests")
 public class CartTests extends SeleniumTest {
 
     @Test

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="REST API tests">
+    <test name="RestApi">
+        <classes>
+            <class name="rest.AlbumsTests"/>
+            <class name="rest.CommentsTests"/>
+            <class name="rest.PhotosTests"/>
+            <class name="rest.PostsTests"/>
+            <class name="rest.TodosTests"/>
+            <class name="rest.UsersTests"/>
+        </classes>
+    </test>
+</suite>
