@@ -1,3 +1,5 @@
+package rest;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.berdzik.rest.Comment;

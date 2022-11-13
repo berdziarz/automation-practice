@@ -1,3 +1,5 @@
+package rest;
+
 import io.restassured.response.Response;
 import org.berdzik.rest.ResourcePath;
 import org.berdzik.rest.Todo;
